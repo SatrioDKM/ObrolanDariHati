@@ -1,0 +1,137 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 870px;
+  height: auto;
+  background-color: rgba(250, 250, 250, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #a92af3;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #a92af3;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7),
+    -2px -2px 4px rgba(255, 255, 255, 0.7),
+    2px -2px 4px rgba(255, 255, 255, 0.7), -2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+p {
+  font-size: 1.6em;
+  color: #083b8a;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Tombol akan disusun dalam beberapa baris jika perlu */
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1em;
+  background-color: #a92af3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 150px;
+}
+
+button:hover {
+  background-color: #083b8a;
+  transform: scale(1.05);
+}
+
+/* Responsif untuk layar lebih kecil dari 768px */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    /* Lebar container lebih besar di layar kecil */
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button {
+    width: 80%;
+    height: 80%;
+    padding: 12px;
+    font-size: 1.2em;
+  }
+}
+
+/* Responsif untuk tablet lebih kecil dari 1024px */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    /* Lebar container disesuaikan untuk tablet */
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .button-container {
+    flex-direction: row;
+    /* Tombol tetap dalam satu baris */
+    gap: 20px;
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+  }
+}

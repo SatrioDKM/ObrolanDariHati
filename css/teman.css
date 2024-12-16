@@ -1,4 +1,3 @@
-/* Animasi dan desain menarik */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
@@ -60,12 +59,22 @@ h1 {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Animasi saat kartu diambil (scale dan putar) */
 .card.animate {
   transform: scale(1.1) rotateY(360deg);
 }
+.card-animate-out {
+  transform: rotateX(180deg);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
 
-/* Efek pada tombol */
+/* Animasi masuk kartu */
+.card-animate-in {
+  transform: rotateX(0deg);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
 button {
   padding: 10px 20px;
   background-color: #ff6347;
@@ -83,7 +92,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Animasi efek fade-in pada kontainer */
 @keyframes slideInDown {
   from {
     transform: translateY(-50px);
@@ -102,42 +110,4 @@ button:hover {
   to {
     opacity: 1;
   }
-}
-
-/* Animasi keluar kartu */
-.card-animate-out {
-  transform: translateX(100%) rotateY(180deg); /* Geser keluar dan putar */
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-/* Animasi masuk kartu */
-.card-animate-in {
-  transform: translateX(-100%) rotateY(0deg); /* Geser masuk dan putar */
-  opacity: 1;
-  transition: all 0.5s ease-in-out;
-}
-
-.card {
-  background-color: #ffecd2;
-  color: #333;
-  border: 2px solid #ffb347;
-  border-radius: 15px;
-  padding: 20px;
-  min-height: 120px;
-  font-size: 1.2em;
-  margin: 20px auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(0); /* Awalnya tidak digeser */
-  opacity: 1;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-/* Efek animasi saat tombol ditekan */
-button.button-animate {
-  transform: scale(0.9);
-  transition: transform 0.2s ease;
 }

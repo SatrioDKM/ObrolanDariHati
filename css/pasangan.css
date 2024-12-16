@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+  color: #333;
+  text-align: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/heart-pattern.png");
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 10px;
+  animation: slideInDown 0.8s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #e94057;
+  margin-bottom: -15px;
+  margin-top: -5px;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+.card {
+  background-color: #fae1ee;
+  color: #333;
+  border: 2px solid #cf0aa1;
+  border-radius: 15px;
+  padding: 20px;
+  min-height: 120px;
+  font-size: 1.2em;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.card.animate {
+  transform: scale(1.1) rotateY(360deg);
+}
+
+.card.card-animate-out {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.card.card-animate-in {
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+
+button {
+  background-color: #ff7eb3;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e94057;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a92af3;
+  text-decoration: underline;
+}
+
+/* Animasi masuk */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .card {
+    font-size: 1em;
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
