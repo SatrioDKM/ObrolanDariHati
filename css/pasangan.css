@@ -123,11 +123,14 @@ a:hover {
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
   .container {
+    width: 78%;
+    height: 70%;
     padding: 20px;
   }
 
   h1 {
-    font-size: 2em;
+    padding-top: 5px;
+    font-size: 1.6em;
   }
 
   .card {

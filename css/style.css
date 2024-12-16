@@ -131,7 +131,9 @@ button:hover {
   }
 
   button {
-    padding: 15px 30px;
-    font-size: 1em;
+    width: 80%;
+    height: 80%;
+    padding: 12px;
+    font-size: 1.2em;
   }
 }
