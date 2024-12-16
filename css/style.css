@@ -108,30 +108,30 @@ button:hover {
 @media (max-width: 1024px) {
   .container {
     width: 80%;
-    /* Lebar container disesuaikan untuk tablet */
-    padding: 25px;
+    padding-bottom: 25px;
+    padding-top: 5px;
   }
 
   h1 {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 
   h2 {
-    font-size: 1.6em;
+    font-size: 1em;
   }
 
   p {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   .button-container {
     flex-direction: row;
-    /* Tombol tetap dalam satu baris */
+    align-items: center;
     gap: 20px;
   }
 
   button {
     padding: 15px 30px;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }
