@@ -32,7 +32,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 30px;
-  animation: fadeIn 1s ease-in-out;
+  animation: slideInDown 0.8s ease-in-out;
 }
 
 h1 {
@@ -87,7 +87,7 @@ button:hover {
 
 @keyframes slideInDown {
   from {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     opacity: 0;
   }
   to {
@@ -113,7 +113,7 @@ button:hover {
 
 /* Animasi masuk kartu */
 .card-animate-in {
-  transform: translateX(-10%) rotateY(0deg);
+  transform: translateX(0%) rotateY(0deg);
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }

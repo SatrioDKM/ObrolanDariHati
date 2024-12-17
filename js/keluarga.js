@@ -1,229 +1,158 @@
 const cards = [
   {
     id: 1,
-    question:
-      "Menurut kalian, siapa di antara kita yang paling sering bikin ngakak?",
+    question: "Siapa yang paling sering bikin suasana rumah jadi rame?",
   },
   {
     id: 2,
-    question:
-      "Siapa yang paling gampang lupa sama janji tapi tetep kita sayang?",
+    question: "Menurut kalian, siapa yang paling rajin bantu di rumah?",
   },
   {
     id: 3,
-    question:
-      "Menurut kalian, siapa yang paling sering jadi ‘admin dadakan’ pas lagi ngumpul?",
+    question: "Hal lucu apa yang pernah bikin kita semua ngakak bareng?",
   },
   {
     id: 4,
-    question: "Siapa yang paling bisa diandalkan kalo kita lagi butuh bantuan?",
+    question: "Siapa yang paling ribet kalau lagi diajak keluar rumah?",
   },
   {
     id: 5,
-    question:
-      "Hal paling konyol apa yang pernah kita lakuin bareng menurut kalian?",
+    question: "Apa kenangan keluarga yang paling berkesan untuk kalian?",
   },
-  {
-    id: 6,
-    question: "Menurut kalian, siapa yang paling cocok jadi pemimpin geng ini?",
-  },
+  { id: 6, question: "Siapa yang paling sering bangun siang di rumah?" },
   {
     id: 7,
-    question:
-      "Kalau kita bikin bisnis bareng, siapa yang bakal jadi bos dan siapa karyawan?",
+    question: "Menurut kalian, siapa yang paling jago masak di keluarga?",
   },
-  {
-    id: 8,
-    question: "Menurut kalian, siapa yang bakal nikah paling terakhir?",
-  },
+  { id: 8, question: "Siapa yang paling sering lupa naruh barang di rumah?" },
   {
     id: 9,
-    question:
-      "Siapa di antara kita yang paling sering ngilang terus muncul tiba-tiba?",
+    question: "Hal kecil apa yang bikin kita merasa dekat sebagai keluarga?",
   },
-  {
-    id: 10,
-    question:
-      "Menurut kalian, kebiasaan siapa yang paling bikin heran tapi kocak?",
-  },
-  {
-    id: 11,
-    question: "Siapa yang paling ribet kalo lagi diajak pergi bareng?",
-  },
-  {
-    id: 12,
-    question:
-      "Menurut kalian, siapa yang paling pinter bikin alasan kalau datang telat?",
-  },
+  { id: 10, question: "Siapa yang paling suka bercanda di meja makan?" },
+  { id: 11, question: "Menurut kalian, siapa yang paling cerewet di rumah?" },
+  { id: 12, question: "Siapa yang paling suka ngemil di keluarga ini?" },
   {
     id: 13,
-    question: "Siapa di antara kita yang paling gampang diajak hal random?",
-  },
-  {
-    id: 14,
     question:
-      "Menurut kalian, siapa yang paling baper kalau lagi dibercandain?",
+      "Apa kebiasaan unik setiap anggota keluarga yang bikin kita ingat mereka?",
   },
+  { id: 14, question: "Siapa yang paling sering ketawa kenceng di rumah?" },
   {
     id: 15,
-    question: "Hal apa yang bikin kita jadi klop banget satu sama lain?",
+    question:
+      "Menurut kalian, siapa yang paling suka jalan-jalan bareng keluarga?",
   },
   {
     id: 16,
-    question: "Menurut kalian, siapa yang bakal sukses duluan jadi crazy rich?",
+    question: "Apa momen paling lucu yang pernah kita alami bersama keluarga?",
   },
-  {
-    id: 17,
-    question:
-      "Siapa yang paling sering bikin rencana tapi ujung-ujungnya batal?",
-  },
+  { id: 17, question: "Siapa yang paling hobi nonton TV di rumah?" },
   {
     id: 18,
-    question:
-      "Menurut kalian, apa kenangan paling absurd yang kita punya bareng?",
+    question: "Menurut kalian, siapa yang paling mudah marah di keluarga?",
   },
-  {
-    id: 19,
-    question:
-      "Siapa yang paling sering jadi ‘penengah’ pas lagi ada drama kecil?",
-  },
+  { id: 19, question: "Hal apa yang bikin keluarga kita terasa spesial?" },
   {
     id: 20,
     question:
-      "Menurut kalian, siapa yang paling mirip karakter di film atau series?",
+      "Siapa yang paling sering jadi 'penengah' kalau ada yang berantem?",
   },
-  { id: 21, question: "Siapa yang paling sering curhat random tengah malam?" },
+  { id: 21, question: "Siapa yang paling suka bercerita di keluarga kita?" },
   {
     id: 22,
-    question:
-      "Menurut kalian, siapa yang bakal jadi traveler sejati di masa depan?",
+    question: "Menurut kalian, siapa yang paling suka olahraga di keluarga?",
   },
   {
     id: 23,
-    question: "Siapa yang paling suka ‘ngeracunin’ hal baru ke geng ini?",
+    question: "Siapa yang paling sering bikin rencana liburan keluarga?",
   },
   {
     id: 24,
     question:
-      "Menurut kalian, kebiasaan apa yang bikin kita selalu inget satu sama lain?",
+      "Apa makanan favorit keluarga yang bikin kita selalu ingin kumpul?",
   },
-  {
-    id: 25,
-    question: "Siapa yang paling gampang ketawa bahkan buat hal receh?",
-  },
+  { id: 25, question: "Siapa yang paling suka bersih-bersih rumah?" },
   {
     id: 26,
     question:
-      "Menurut kalian, siapa yang bakal bikin podcast kalau kita terkenal nanti?",
+      "Menurut kalian, siapa yang paling sering lupa bawa barang penting?",
   },
   {
     id: 27,
-    question: "Siapa yang paling suka bikin konten atau story paling absurd?",
+    question: "Siapa yang paling semangat kalau ada acara keluarga besar?",
   },
-  {
-    id: 28,
-    question: "Menurut kalian, siapa yang paling chill kalau lagi ada masalah?",
-  },
-  {
-    id: 29,
-    question: "Siapa di antara kita yang paling jago ngemil pas nongkrong?",
-  },
+  { id: 28, question: "Hal apa yang selalu bikin suasana rumah jadi hangat?" },
+  { id: 29, question: "Siapa yang paling suka bercanda walau lagi serius?" },
   {
     id: 30,
-    question: "Menurut kalian, siapa yang paling susah diajak serius?",
+    question:
+      "Menurut kalian, siapa yang paling suka mendengarkan musik di rumah?",
   },
-  {
-    id: 31,
-    question: "Hal random apa yang paling sering kita obrolin bareng?",
-  },
+  { id: 31, question: "Apa kebiasaan kecil yang bikin rumah terasa nyaman?" },
   {
     id: 32,
     question:
-      "Menurut kalian, siapa yang paling sering bikin grup chat rame tiba-tiba?",
+      "Siapa yang paling sering ngingetin anggota keluarga lain soal tugas?",
   },
   {
     id: 33,
-    question: "Siapa yang paling cocok jadi ‘juru foto’ pas kita jalan-jalan?",
+    question: "Siapa yang paling suka menyanyi walau suaranya pas-pasan?",
   },
   {
     id: 34,
     question:
-      "Menurut kalian, siapa yang bakal paling sering ngajak reuni nanti?",
+      "Menurut kalian, siapa yang paling suka cerita tentang hari-harinya?",
   },
-  {
-    id: 35,
-    question:
-      "Apa kebiasaan kecil yang paling bikin kalian inget sama temen-temen di sini?",
-  },
+  { id: 35, question: "Siapa yang paling susah diajak keluar dari kamar?" },
   {
     id: 36,
     question:
-      "Menurut kalian, siapa yang paling gampang panik kalau ada hal mendadak?",
+      "Apa momen yang bikin kalian merasa bersyukur punya keluarga ini?",
   },
-  {
-    id: 37,
-    question:
-      "Siapa yang paling bikin suasana rame walau cuma ngomong satu dua kata?",
-  },
+  { id: 37, question: "Siapa yang paling suka ngajak makan bareng di luar?" },
   {
     id: 38,
     question:
-      "Menurut kalian, apa hal paling seru yang harus kita lakuin bareng tahun ini?",
+      "Menurut kalian, siapa yang paling sering bikin rumah ramai dengan obrolan?",
   },
-  {
-    id: 39,
-    question: "Siapa yang paling berpotensi jadi artis atau influencer?",
-  },
+  { id: 39, question: "Hal apa yang sering kita lakuin bareng saat libur?" },
   {
     id: 40,
-    question: "Menurut kalian, siapa yang paling nyebelin tapi bikin kangen?",
+    question: "Siapa yang paling sering telat bangun pas ada acara keluarga?",
   },
   {
     id: 41,
-    question: "Menurut kalian, siapa yang paling sering jadi bahan bercandaan?",
+    question: "Apa hal sederhana yang bikin kita merasa dekat satu sama lain?",
   },
   {
     id: 42,
     question:
-      "Siapa yang paling sering ngajak makan tapi nggak pernah traktir?",
+      "Siapa yang paling suka menyimpan barang-barang kecil tapi penting?",
   },
   {
     id: 43,
     question:
-      "Menurut kalian, siapa yang paling sering tiba-tiba nge-ghosting grup chat?",
+      "Menurut kalian, siapa yang paling sering mendadak jadi ‘guru’ di rumah?",
   },
-  {
-    id: 44,
-    question: "Siapa di antara kita yang paling sering bikin agenda dadakan?",
-  },
+  { id: 44, question: "Siapa yang paling gampang tidur di mana aja?" },
   {
     id: 45,
-    question:
-      "Menurut kalian, siapa yang paling jago nyari tempat nongkrong murah meriah?",
+    question: "Apa kebiasaan lucu di rumah yang nggak pernah bisa dilupakan?",
   },
   {
     id: 46,
-    question:
-      "Siapa yang paling gampang dibohongin tapi tetep ketawa kalo tahu?",
+    question: "Menurut kalian, siapa yang paling sering ngajak foto keluarga?",
   },
-  {
-    id: 47,
-    question:
-      "Menurut kalian, siapa yang bakal paling semangat kalo diajak camping atau trip?",
-  },
+  { id: 47, question: "Siapa yang paling gampang lupa ngerjain tugas rumah?" },
   {
     id: 48,
-    question:
-      "Siapa yang paling cocok jadi motivator kalau lagi ada yang galau?",
+    question: "Apa hal yang bikin suasana rumah jadi hangat setiap hari?",
   },
-  {
-    id: 49,
-    question:
-      "Menurut kalian, siapa yang paling bikin bangga kalau sukses nanti?",
-  },
+  { id: 49, question: "Siapa yang paling suka bikin kejutan untuk keluarga?" },
   {
     id: 50,
-    question: "Apa satu hal yang bikin pertemanan kita jadi nggak tergantikan?",
+    question: "Apa hal kecil yang selalu bikin kita ingat satu sama lain?",
   },
 ];
 

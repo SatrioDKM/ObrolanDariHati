@@ -33,6 +33,7 @@ body {
   border-radius: 20px;
   padding: 30px;
   animation: fadeIn 1s ease-in-out;
+  animation: slideInDown 0.8s ease-in-out;
 }
 
 h1 {
