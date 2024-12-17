@@ -30,13 +30,13 @@ body {
   padding: 40px 20px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  max-width: 600px;
+  max-width: 500px;
   margin: 10px;
   animation: slideInDown 0.8s ease-in-out;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 1.8em;
   color: #e94057;
   margin-bottom: -15px;
   margin-top: -5px;
@@ -117,29 +117,5 @@ a:hover {
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-  .container {
-    width: 78%;
-    height: 70%;
-    padding: 20px;
-  }
-
-  h1 {
-    padding-top: 5px;
-    font-size: 1.6em;
-  }
-
-  .card {
-    font-size: 1em;
-    padding: 15px;
-  }
-
-  button {
-    padding: 10px 20px;
-    font-size: 0.9em;
   }
 }
